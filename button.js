@@ -125,7 +125,7 @@ var Button = function(launchpad, note, y) {
 
     this.toFriendlyNote = () => {
       if(this.y == 8)
-          return 104 + this.x;
+          return 63 + this.x;
       else
           return (this.y * 8) + this.x;
     };
