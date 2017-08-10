@@ -122,6 +122,14 @@ var Button = function(launchpad, note, y) {
         else
             return (this.y * 16) + this.x;
     };
+
+    this.toFriendlyNote = () => {
+      if(this.y == 8)
+          return 104 + this.x;
+      else
+          return (this.y * 8) + this.x;
+    };
+
     this.toString = function() {
         return "(" + this.x + ", " + this.y + ")";
     }
